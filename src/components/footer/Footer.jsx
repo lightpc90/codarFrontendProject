@@ -27,13 +27,13 @@ const Footer = () => {
                         <div className='flex flex-col gap-3'>
 
                             {FooterLink1.map((link) => (
-                                <Link href={link.link}>{link.name}</Link>
+                                <Link key={link.name} href={link.link}>{link.name}</Link>
                             ))}
                         </div>
                         <div className='flex flex-col gap-3'>
 
                             {FooterLink2.map((link) => (
-                                <Link href={link.link}>{link.name}</Link>
+                                <Link key={link.name} href={link.link}>{link.name}</Link>
                             ))}
                         </div>
                     </div>

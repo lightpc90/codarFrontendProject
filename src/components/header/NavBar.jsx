@@ -17,7 +17,7 @@ const Navbar = () => {
             </div>
             <div className='flex gap-12 font-bold'>
                 {Navlinks.map((link) => (
-                    <Link className={`transition-all duration-500 delay-100 ${pathname === link.link ? 'text-primary' : ''}  hover:text-primary`} key={link.name} href={link.link}>{link.name.toUpperCase()}</Link>
+                    <Link  className={`transition-all duration-500 delay-100 ${pathname === link.link ? 'text-primary' : ''}  hover:text-primary`} key={link.name} href={link.link}>{link.name.toUpperCase()}</Link>
                 ))}
             </div>
             <div className='flex gap-8 items-center'>
