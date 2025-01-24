@@ -24,3 +24,25 @@ export const FooterLink2 = [
     {name: 'Innovation', link: '/innovation'},
     {name: 'Testimonials', link: '/testimonials'},
 ]
+
+export const Categories = [
+    'Fresh Meat',
+    'Vegetables',
+    'Fruit & Nut Gifts',
+    'Fresh Berries',
+    'Ocean Foods',
+    'Butter & Eggs',
+    'Fastfood',
+    'Fresh Onion',
+    'Papayaya & Crispy',
+    'Oatmeal',
+    'Fresh Bananas',
+]
+
+export const carouselItems = [
+    {name: "vegetables", image: "/images/veg.png"},
+    {name: "dringk Fruits", image: "/images/veg.png"},
+    {name: "dried fruits", image: "/images/veg.png"},
+    {name: "fresh fruits", image: "/images/veg.png"},
+    {name: "fresh meat", image: "/images/veg.png"},
+]

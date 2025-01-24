@@ -13,11 +13,11 @@ const Navbar = () => {
     return (
         <div className='flex justify-between px-8 2xl:px-[380px] items-center'>
             <div>
-                <Image src="/logo.png" alt="logo" width={100} height={100} />
+                <Image src="/images/logo.png.webp" alt="logo" width={100} height={100} />
             </div>
             <div className='flex gap-12 font-bold'>
                 {Navlinks.map((link) => (
-                    <Link className={`${pathname === link.link ? 'text-primary' : ''}  hover:text-primary`} key={link.name} href={link.link}>{link.name.toUpperCase()}</Link>
+                    <Link className={`transition-all duration-500 delay-100 ${pathname === link.link ? 'text-primary' : ''}  hover:text-primary`} key={link.name} href={link.link}>{link.name.toUpperCase()}</Link>
                 ))}
             </div>
             <div className='flex gap-8 items-center'>

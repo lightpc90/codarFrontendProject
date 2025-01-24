@@ -37,7 +37,8 @@ const ContactBar = () => {
                 <div className='border-[2px] border-r-gray-400 h-[20px]'></div>
                 <Link href="/" className='flex gap-4 items-center'>
                     {/* USA flag */}
-                    USA Flag
+
+                    
                     <span className='flex items-center'>
 
                     <p>English</p>
