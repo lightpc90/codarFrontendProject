@@ -1,7 +1,7 @@
+
 import { FeaturedProductLinks, FeaturedProducts } from '@/utils/data'
-import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import FeaturedProductLayout from './FeaturedProductLayout'
 
 const FeauturedProducts = () => {
     return (
@@ -20,14 +20,7 @@ const FeauturedProducts = () => {
             {/* ----- */}
             <div className='flex flex-wrap items-center justify-center gap-4'>
                 {FeaturedProducts.map((item, index) => (
-                    <div key={index} className='flex flex-col items-center justify-center gap-2'>
-                        <div className='w-[260px] h-[300px] flex flex-wrap
-                   bg-gray-200 rounded-md items-center justify-center justify-center'>
-                            <Image src={item.image} alt={item.name} width={200} height={200} />
-                        </div>
-                        <h1 className='mt-2'>{item.name}</h1>
-                        <p className='font-bold mb-6'>{item.price || "$30.00"}</p>
-                    </div>
+                <FeaturedProductLayout key={index} item={item}/>
                 ))}
             </div>
             {/* ---- */}
