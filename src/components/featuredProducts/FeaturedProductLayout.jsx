@@ -5,6 +5,7 @@ import Image from 'next/image'
 import React from 'react'
 import ProductReaction from '../productIcons/ProductReaction'
 
+
 const FeaturedProductLayout = ({ item }) => {
     const [isHover, setHover] = useState(false)
   return (
