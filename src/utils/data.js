@@ -52,18 +52,18 @@ export const FeaturedProductLinks = [
     "Oranges",
     "Fresh Meat",
     "Vegetables",
-    "Fastfood",
+    "Fast Food",
 ]
 
 export const FeaturedProducts = [
-    { name: "Crab Pool Seurity", image: "/images/fresh-meat.png" },
-    { name: "Crab Pool Seurity", image: "/images/plantain.png" },
-    { name: "Crab Pool Seurity", image: "/images/guava.png" },
-    { name: "Crab Pool Seurity", image: "/images/watermelon.png" },
-    { name: "Crab Pool Seurity", image: "/images/grapes.png" },
-    { name: "Crab Pool Seurity", image: "/images/burger.png" },
-    { name: "Crab Pool Seurity", image: "/images/mango.png" },
-    { name: "Crab Pool Seurity", image: "/images/apple.png" },
+    { name: "Crab Pool Seurity", image: "/images/fresh-meat.png", category: "Fresh Meat" },
+    { name: "Crab Pool Seurity", image: "/images/plantain.png", category: "Fast Food" },
+    { name: "Crab Pool Seurity", image: "/images/guava.png", category: "Oranges" },
+    { name: "Crab Pool Seurity", image: "/images/watermelon.png", category: "Oranges" },
+    { name: "Crab Pool Seurity", image: "/images/grapes.png", category: "Vegetables" },
+    { name: "Crab Pool Seurity", image: "/images/burger.png", category: "Fast Food" },
+    { name: "Crab Pool Seurity", image: "/images/mango.png", category: "Vegetables" },
+    { name: "Crab Pool Seurity", image: "/images/apple.png", category: "vegetables" },
 ]
 
 

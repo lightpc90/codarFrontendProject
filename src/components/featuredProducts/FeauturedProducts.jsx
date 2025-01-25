@@ -2,17 +2,20 @@
  
 import { useState } from 'react'
 import { FeaturedProductLinks, FeaturedProducts } from '@/utils/data'
-import Link from 'next/link'
 import FeaturedProductLayout from './FeaturedProductLayout'
 import Image from 'next/image'
-import { motion, AnimatePresence } from 'framer-motion'
+
 
 const categories = [
-    'All', 'Orange', 'Fruits', 
+    'All', 'Orange', 'Fresh Meat', 'Vegetable', 'Fast Food,'
 ]
 
 const FeauturedProducts = () => {
     const [filteredCategory, setFilteredCategory] = useState('All')
+
+    const filteredProducts = filteredCategory === 'All'
+        ? FeaturedProducts
+        : FeaturedProducts.filter((product)=>product.category === filteredCategory)
     return (
         <div className='my-[100px] w-full flex flex-col items-center justify-center mx-auto 2xl:w-[1200px]'>
             <h1 className='text-center text-3xl font-bold'>Featured Product</h1>
@@ -21,14 +24,16 @@ const FeauturedProducts = () => {
             {/* ----- */}
             <div className='flex flex-wrap items-center justify-center my-6 gap-4'>
                 {FeaturedProductLinks.map((item, index) => (
-                    <Link href={`/products/${item}`} key={index}>
+                    <button onClick={() => setFilteredCategory(item)} key={index}
+                    className={`pb-1 ${item === filteredCategory ? 'border-b-2 border-primary': ''}`}
+                    >
                         {item}
-                    </Link>
+                    </button>
                 ))}
             </div>
             {/* ----- */}
             <div className='flex flex-wrap items-center justify-center gap-4'>
-                {FeaturedProducts.map((item, index) => (
+                {filteredProducts.map((item, index) => (
                 <FeaturedProductLayout key={index} item={item}/>
                 ))}
             </div>
