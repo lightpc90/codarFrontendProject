@@ -57,13 +57,13 @@ export const FeaturedProductLinks = [
 
 export const FeaturedProducts = [
     { name: "Crab Pool Seurity", image: "/images/fresh-meat.png" },
-    { name: "Crab Pool Seurity", image: "/images/fresh-meat.png" },
-    { name: "Crab Pool Seurity", image: "/images/fresh-meat.png" },
-    { name: "Crab Pool Seurity", image: "/images/fresh-meat.png" },
-    { name: "Crab Pool Seurity", image: "/images/fresh-meat.png" },
-    { name: "Crab Pool Seurity", image: "/images/fresh-meat.png" },
-    { name: "Crab Pool Seurity", image: "/images/fresh-meat.png" },
-    { name: "Crab Pool Seurity", image: "/images/fresh-meat.png" },
+    { name: "Crab Pool Seurity", image: "/images/plantain.png" },
+    { name: "Crab Pool Seurity", image: "/images/guava.png" },
+    { name: "Crab Pool Seurity", image: "/images/watermelon.png" },
+    { name: "Crab Pool Seurity", image: "/images/grapes.png" },
+    { name: "Crab Pool Seurity", image: "/images/burger.png" },
+    { name: "Crab Pool Seurity", image: "/images/mango.png" },
+    { name: "Crab Pool Seurity", image: "/images/apple.png" },
 ]
 
 
