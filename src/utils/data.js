@@ -68,7 +68,21 @@ export const FeaturedProducts = [
 
 
 export const Blogs = [
-    { title: "Cooking tips make cooking simple", image: '/images/cookingBlog.webp', timestamp: "May 4, 2019", content: `Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat`},
-    { title: "6 ways to prepare breakfast for 30", image: '/images/breakfastBlog.webp', timestamp: "May 4, 2019", content: `Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat`},
-    { title: "Visit the clean farm in the US", image: '/images/cleanfarmBlog.webp', timestamp: "May 4, 2019", content: `Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat`},
+    { title: "Cooking tips make cooking simple", image: '/images/cookingBlog.webp', timestamp: "May 4, 2019", content: `Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat` },
+    { title: "6 ways to prepare breakfast for 30", image: '/images/breakfastBlog.webp', timestamp: "May 4, 2019", content: `Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat` },
+    { title: "Visit the clean farm in the US", image: '/images/cleanfarmBlog.webp', timestamp: "May 4, 2019", content: `Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat` },
+]
+
+
+export const DepartmentsInShop = [
+    "Fresh Meat",
+    "Vegetables",
+    "Fruit & Nut Gifts",
+    "Fresh Berries",
+    "Ocean Foods",
+    "Butter & Eggs",
+    "Fastfood",
+    "Fresh Onion",
+    "Papayaya & Crisps",
+    "Oatmeal",
 ]

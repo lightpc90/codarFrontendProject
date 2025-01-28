@@ -11,10 +11,11 @@ const FeaturedProductLayout = ({ item }) => {
     const [isHover, setHover] = useState(false)
   return (
       <motion.div
-          initial={{ opacity: 0, y: 50, scale: 0.5 }} // Animate in from below
-          animate={{ opacity: 1, y: 0, scale: 1 }} // Set final position
-          exit={{ opacity: 0, y: -50, scale: 0.5 }} // Animate out upward
-          transition={{ duration: 0.3 }}
+          layout
+          initial={{ opacity: 0, scale: 0.9 }} // Animate in from below
+          animate={{ opacity: 1, scale: 1 }} // Set final position
+          exit={{ opacity: 0, scale: 0.9 }} // Animate out upward
+          transition={{ type: "spring", stiffness: "300", damping: "30", duration: "0.5"  }}
           onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)} className='flex flex-col items-center justify-center gap-2'>
           <div className='w-[260px] h-[300px] flex
                    bg-gray-200 rounded-md items-center justify-center justify-center relative'>
