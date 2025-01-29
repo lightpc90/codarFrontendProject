@@ -64,6 +64,10 @@ export const FeaturedProducts = [
     { name: "Crab Pool Seurity", image: "/images/burger.png", category: "Fast Food" },
     { name: "Crab Pool Seurity", image: "/images/mango.png", category: "Vegetables" },
     { name: "Crab Pool Seurity", image: "/images/apple.png", category: "vegetables" },
+    { name: "Crab Pool Seurity", image: "/images/drink-fruits.webp", category: "Vegetables" },
+    { name: "Crab Pool Seurity", image: "/images/fruits.png", category: "Fast Food" },
+    { name: "Crab Pool Seurity", image: "/images/juice.png", category: "Vegetables" },
+    { name: "Crab Pool Seurity", image: "/images/pepper.webp", category: "vegetables" },
 ]
 
 
