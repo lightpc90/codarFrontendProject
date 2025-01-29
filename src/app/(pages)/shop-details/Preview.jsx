@@ -38,12 +38,12 @@ const Preview = () => {
                 <div className='flex items-center gap-2 h-[50px]'>
                     <QuantityButton/>
                     <button className='bg-primary px-6 py-2 h-full font-bold text-white'>ADD TO CART</button>
-                    <button className='bg-gray-200 px-6 py-2 h-full font-bold'>
+                    <button className='bg-gray-200 text-gray-500 px-6 py-2 h-full font-bold'>
                         <LuHeart/>
                     </button>
                 </div>
                 <div className='border-b-[1px] border-gray-200 w-full my-6'></div>
-                <div className='flex gap-6'>
+                <div className='flex gap-[100px]'>
                     <div className='flex flex-col gap-4'>
                         <p className='font-bold'>Availability</p>
                         <p className='font-bold'>Shipping</p>
@@ -54,7 +54,7 @@ const Preview = () => {
                         <p>In Stock</p>
                         <p>01 day shipping. <span className='text-rose-800'>Free pickup today</span></p>
                         <p>0.5kg</p>
-                        <div>
+                        <div className='flex items-center gap-3 text-lg'>
                             <TiSocialFacebook />
                             <TiSocialTwitter />
                             <TiSocialInstagram />

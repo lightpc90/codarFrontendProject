@@ -1,5 +1,6 @@
 import React from 'react'
 import Preview from './Preview'
+import Details from './Details'
 
 const page = () => {
   return (
@@ -7,6 +8,7 @@ const page = () => {
           {/* preview */}
           <Preview/>
           {/* details */}
+          <Details/>
           {/* related products */}
     </div>
   )
