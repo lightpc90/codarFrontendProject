@@ -6,6 +6,7 @@ import "./globals.css";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
 import Hero from "@/components/hero/Hero";
+import SecondaryHeader from "@/components/header/secondary-header/SecondaryHeader";
 
 const cairo = Cairo({
   subsets: ["latin"],
@@ -36,6 +37,7 @@ export default function RootLayout({ children }) {
       >
         <Header />
         <Hero />
+        <SecondaryHeader/>
         {children}
         <Footer/>
       </body>

@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import { Navlinks } from '@/utils/data'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
@@ -8,38 +8,49 @@ import Image from 'next/image'
 import Likes from '../productIcons/Likes'
 import Carts from '../productIcons/Carts'
 import PagesTooltip from './PagesTooltip'
+import { motion, AnimatePresence } from "framer-motion"
 
 const Navbar = () => {
     const pathname = usePathname()
     const [showComponent, setShowComponent] = useState(false);
     const linkRef = useRef(null); // Ref to track the 'page' link element
-    const tooltipRef = useRef(null); // Ref to track the 'page' link element
+    const tooltipRef = useRef(null); 
+    const timeoutRef = useRef(null); 
 
-
+ 
     const handleMouseEnter = () => {
+        // clear any pending hide operations
+        if (timeoutRef.current) {
+            clearTimeout(timeoutRef.current)
+            timeoutRef.current = null
+        }
         setShowComponent(true);
     };
 
     const handleMouseLeave = (event) => {
-        if (
-            tooltipRef.current &&
-            tooltipRef.current.contains(event.relatedTarget)
-        ) {
-            return; // Don't hide the tooltip
-        }
-        setShowComponent(false);
+        if (tooltipRef.current?.contains(event.relatedTarget)) return; // Don't hide the tooltip
+        // start hiding after delay
+        timeoutRef.current = setTimeout(() => {
+            setShowComponent(false)
+        }, 300)
     };
 
     const handleTooltipMouseLeave = (event) => {
         // Check if the mouse is moving to the 'page' link
-        if (
-            linkRef.current &&
-            linkRef.current.contains(event.relatedTarget)
-        ) {
-            return; // Don't hide the tooltip
-        }
-        setShowComponent(false);
+        if (linkRef.current?.contains(event.relatedTarget))return; // Don't hide the tooltip
+        
+        // start hiding after delay
+        timeoutRef.current = setTimeout(() => {
+            setShowComponent(false)
+        }, 300)
     };
+
+    // clear timeout on unmount
+    useEffect(() => {
+        return () => {
+            if(timeoutRef.current) clearTimeout(timeoutRef.current)
+        }
+    }, [])
     // Calculate the position of the 'page' link
     const getTooltipPosition = () => {
         if (linkRef.current) {
@@ -83,17 +94,24 @@ const Navbar = () => {
                     left: `${tooltipPosition.left}px`,
                     zIndex: 1000
                 }}>
-                    {showComponent &&
-                        <div ref={tooltipRef}
-                            onMouseLeave={handleTooltipMouseLeave} // Handle mouse leave for the tooltip
-                        >
-                            <PagesTooltip />
-                        </div>
-                    }
+                    <AnimatePresence>
+                        {showComponent &&
+                            <motion.div
+                                key={'tooltip'}
+                                initial={{ opacity: 0, y: 50 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                exit={{ opacity: 0, y: 100 }}
+                                transition={{ duration: 0.5, }}
+                                ref={tooltipRef}
+                                onMouseLeave={handleTooltipMouseLeave} // Handle mouse leave for the tooltip
+                            >
+                                <PagesTooltip />
+                            </motion.div>
+                        }
+                    </AnimatePresence>
                 </div>
             </div>
             <div className='flex gap-8 items-center'>
-
                 <div className='flex gap-4 items-center text-[22px]'>
                     <Likes />
                     <Carts />

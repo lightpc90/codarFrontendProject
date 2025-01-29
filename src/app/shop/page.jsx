@@ -19,15 +19,6 @@ import Products from './Products';
 const page = () => {
     return (
         <div>
-            <div className='bg-slate-800 flex flex-col items-center justify-center text-white h-[150px]'>
-                <h1 className='text-4xl font-bold '>
-                    Organic Shop
-                </h1>
-                <span>
-                    <Link href='/' className='font-bold mr-2'>Home-</Link>
-                    Shop
-                </span>
-            </div>
             {/* main */}
             <div className='2xl:w-[1200px] mx-auto flex gap-4 my-[100px]'>
                 {/* left items */}
