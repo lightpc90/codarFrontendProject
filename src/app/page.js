@@ -13,8 +13,7 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen overflow-x-hidden">
       <main className="w-full">
-        <Header />
-        <Hero />
+        
         <Carousel />
         <FeauturedProducts />
         <div className="flex flex-wrap 2xl:w-[1200px] mx-auto justify-center gap-8 my-[100px]">
@@ -24,7 +23,6 @@ export default function Home() {
         </div>
         <Blog/>
       </main>
-      <Footer />
     </div>
   );
 }

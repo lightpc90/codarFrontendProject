@@ -3,6 +3,10 @@ import { Cairo} from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 
+import Header from "@/components/header/Header";
+import Footer from "@/components/footer/Footer";
+import Hero from "@/components/hero/Hero";
+
 const cairo = Cairo({
   subsets: ["latin"],
   weight: ["400", "700"],
@@ -30,7 +34,10 @@ export default function RootLayout({ children }) {
       <body
         className={`${cairo.className} ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Header />
+        <Hero />
         {children}
+        <Footer/>
       </body>
     </html>
   );
