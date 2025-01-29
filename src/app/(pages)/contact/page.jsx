@@ -1,6 +1,7 @@
 import React from 'react'
 import Contact from './Contact'
 import Map from './Map'
+import LeaveMessage from './LeaveMessage'
 
 const page = () => {
   return (
@@ -8,6 +9,7 @@ const page = () => {
       <Contact/>
       <Map/>
       {/* form */}
+      <LeaveMessage/>
     </div>
   )
 }
