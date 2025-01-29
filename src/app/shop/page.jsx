@@ -3,8 +3,11 @@ import { DepartmentsInShop } from '@/utils/data'
 import Link from 'next/link'
 import {
     MdOutlineKeyboardArrowLeft,
-    MdOutlineKeyboardArrowRight
+    MdOutlineKeyboardArrowRight,
+    MdFormatListBulleted
 } from 'react-icons/md'
+import { MdOutlineKeyboardArrowDown } from "react-icons/md";
+import { IoGrid } from "react-icons/io5";
 
 const page = () => {
     return (
@@ -117,6 +120,30 @@ const page = () => {
                     </div>
                     {/* horizontal line */}
                     <div className='border-b-[1px] border-gray-300 my-[90px]' ></div>
+                    {/* ----------------- */}
+
+                    <div className=''>
+                        <div className='flex gap-2 items-center justify-between'>
+                            <div className='flex items-center '>
+                                <span className='text-gray-400'>
+                                Sort By
+                                </span>
+                                <button className='font-bold ml-6'>Default</button>
+                                <MdOutlineKeyboardArrowDown size={22}/>
+                            </div>
+                            <div className='flex gap-2 items-center'>
+                                <span className='font-bold'>16</span>
+                                <span className='text-gray-400'>
+                                Products found
+                                </span>
+                            </div>
+                            <div className='text-gray-400 flex items-center gap-3 '>
+                                <IoGrid size={22}/>
+                                <MdFormatListBulleted size={22} />
+                            </div>
+                        </div>
+                        {/* list of products */}
+                    </div>
                 </div>
             </div>
         </div>
