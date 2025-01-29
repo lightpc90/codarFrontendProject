@@ -20,7 +20,7 @@ const page = () => {
     return (
         <div>
             {/* main */}
-            <div className='2xl:w-[1200px] mx-auto flex gap-4 my-[100px]'>
+            <div>
                 {/* left items */}
                 <div className='flex flex-col w-full 2xl:w-[400px] gap-8'>
                     <Departments />
