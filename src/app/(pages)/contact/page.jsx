@@ -3,7 +3,7 @@ import Contact from './Contact'
 import Map from './Map'
 import LeaveMessage from './LeaveMessage'
 
-const page = () => {
+const Page = () => {
   return (
     <div className='w-full flex flex-col items-center '>
       <Contact/>
@@ -14,4 +14,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

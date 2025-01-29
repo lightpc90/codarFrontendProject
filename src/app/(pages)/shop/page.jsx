@@ -1,13 +1,4 @@
 
-import { DepartmentsInShop } from '@/utils/data'
-import Link from 'next/link'
-import {
-    MdOutlineKeyboardArrowLeft,
-    MdOutlineKeyboardArrowRight,
-    MdFormatListBulleted
-} from 'react-icons/md'
-import { MdOutlineKeyboardArrowDown } from "react-icons/md";
-import { IoGrid } from "react-icons/io5";
 import Color from './Color';
 import PopularSize from './PopularSize';
 import LatestProducts from '@/components/featuredProducts/LatestProducts';
@@ -16,7 +7,7 @@ import Price from './Price';
 import SaleOff from './SaleOff';
 import Products from './Products';
 
-const page = () => {
+const Page = () => {
     return (
         <div className='w-full'>
             {/* main */}
@@ -43,4 +34,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page
