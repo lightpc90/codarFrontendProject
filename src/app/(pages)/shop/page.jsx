@@ -20,9 +20,9 @@ const page = () => {
     return (
         <div>
             {/* main */}
-            <div>
+            <div className='flex gap-6 justify-between w-full'>
                 {/* left items */}
-                <div className='flex flex-col w-full 2xl:w-[400px] gap-8'>
+                <div className='flex flex-col w-[250px] gap-8 '>
                     <Departments />
                     <Price />
                     <Color />
@@ -31,8 +31,7 @@ const page = () => {
                 </div>
                 {/* -------------- */}
                 {/* right items */}
-                <div className='w-full'>
-                    {/* sale off */}
+                <div className=''>
                     <SaleOff />
                     {/* horizontal line */}
                     <div className='border-b-[1px] border-gray-300 my-[50px]' ></div>

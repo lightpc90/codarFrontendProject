@@ -3,6 +3,8 @@ import SearchBar from './SearchBar'
 import BlogCategories from './BlogCategories'
 import RecentNews from './RecentNews'
 import SearchBy from './SearchBy'
+import { Blogs } from '@/utils/data'
+import ListOfBlogs from './ListOfBlogs'
 
 const Page = () => {
   return (
@@ -11,13 +13,11 @@ const Page = () => {
         <SearchBar/>
         <BlogCategories/>
         <RecentNews/>
-        {/* search by */}
         <SearchBy/>
-
       </div>
       {/* right side */}
       <div>
-        {/* list of blogs */}
+        <ListOfBlogs/>
       </div>
 
     </div>
