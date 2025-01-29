@@ -1,10 +1,12 @@
 import React from 'react'
+import Contact from './Contact'
+import Map from './Map'
 
 const page = () => {
   return (
-    <div>
-      {/* contact */}
-      {/* map */}
+    <div className='w-full flex flex-col items-center '>
+      <Contact/>
+      <Map/>
       {/* form */}
     </div>
   )

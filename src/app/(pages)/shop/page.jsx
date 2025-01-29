@@ -18,7 +18,7 @@ import Products from './Products';
 
 const page = () => {
     return (
-        <div>
+        <div className='w-full'>
             {/* main */}
             <div className='flex gap-6 justify-between w-full'>
                 {/* left items */}
