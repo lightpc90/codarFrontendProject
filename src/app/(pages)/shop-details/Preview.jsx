@@ -1,5 +1,7 @@
+'use client'
+
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 import { FaStar } from "react-icons/fa";
 import { FaRegStarHalfStroke } from "react-icons/fa6";
 import { LuHeart } from "react-icons/lu";
@@ -8,6 +10,7 @@ import { TiSocialFacebook, TiSocialTwitter, TiSocialInstagram, TiSocialPinterest
 import QuantityButton from './QuantityButton';
 
 const Preview = () => {
+    const [quantity, setQuantity] = useState(1)
     return (
         <div className='flex gap-4 justify-between w-full'>
             <div className='w-[600px] '>
@@ -36,7 +39,7 @@ const Preview = () => {
                 </p>
                 {/* --------- */}
                 <div className='flex items-center gap-2 h-[50px]'>
-                    <QuantityButton/>
+                    <QuantityButton quantity={quantity} setQuantity={setQuantity}/>
                     <button className='bg-primary px-6 py-2 h-full font-bold text-white'>ADD TO CART</button>
                     <button className='bg-gray-200 text-gray-500 px-6 py-2 h-full font-bold'>
                         <LuHeart/>
