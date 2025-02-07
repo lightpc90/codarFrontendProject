@@ -70,7 +70,7 @@ const CustomerDetails = () => {
             </div>
             {/* ------------ */}
             <label htmlFor='create_account' className='cursor-pointer'>
-                <input type="checkbox" id="create_account" className='mr-2' />
+                <input type="checkbox" id="create_account" className='mr-6' />
                 <span>Create an account?</span>
             </label>
             <p>
@@ -85,7 +85,7 @@ const CustomerDetails = () => {
                 <input type="password" name="password" className='w-full outline-none border-[1px] border-gray-200 py-3 px-4 rounded-sm' />
             </div>
             <label htmlFor='ship_to_different_address' className='cursor-pointer'>
-                <input type="checkbox" id="ship_to_different_address" className='mr-2' />
+                <input type="checkbox" id="ship_to_different_address" className='mr-6' />
                 <span>Ship to a different address?</span>
             </label>
             {/* ------------ */}
