@@ -40,8 +40,8 @@ const Preview = () => {
                 {/* --------- */}
                 <div className='flex items-center gap-2 h-[50px]'>
                     <QuantityButton quantity={quantity} setQuantity={setQuantity}/>
-                    <button className='bg-primary px-6 py-2 h-full font-bold text-white'>ADD TO CART</button>
-                    <button className='bg-gray-200 text-gray-500 px-6 py-2 h-full font-bold'>
+                    <button className='bg-primary px-6 py-2 h-[50px] font-bold text-white'>ADD TO CART</button>
+                    <button className='bg-gray-200 text-gray-500 px-6 py-2 h-[50px] font-bold'>
                         <LuHeart/>
                     </button>
                 </div>

@@ -3,6 +3,7 @@ import SearchBar from '../blog/SearchBar'
 import BlogCategories from '../blog/BlogCategories'
 import RecentNews from '../blog/RecentNews'
 import SearchBy from '../blog/SearchBy'
+import Blog from '@/components/blog/Blog'
 
 // 
 import { CgFacebook } from "react-icons/cg";
@@ -70,8 +71,12 @@ const page = () => {
         </div>
       </div>
 
-      <span className='inline-flex h-[1px] w-full bg-gray-300'></span>
-      
+      <span className='inline-flex h-[1px] w-full bg-gray-300 my-12'></span>
+      <h1 className='text-center text-3xl font-bold'>Latest Blogs</h1>
+      {/* horizontal line */}
+      <div className='border-b-4 border-primary w-[80px] my-4 mx-auto'></div>
+      {/* ----- */}
+      <Blog/>
     </div>
   )
 }

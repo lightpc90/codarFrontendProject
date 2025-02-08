@@ -12,7 +12,7 @@ const QuantityButton = ({quantity, setQuantity}) => {
         else if (quantity <= 0) setQuantity(0)
     }
     return (
-        <div className='flex items-center h-[40px] text-gray-500'>
+        <div className='flex items-center h-[50px] text-gray-500'>
             <button onClick={handleMinus} className='bg-gray-200 px-4 h-full'>
                 <FiMinus />
             </button>
