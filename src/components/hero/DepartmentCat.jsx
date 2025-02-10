@@ -5,6 +5,7 @@ import { useState } from 'react'
 import { IoMenu } from "react-icons/io5";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { Categories } from '@/utils/data';
+import { AnimatePresence, motion } from 'framer-motion';
 
 const DepartmentCat = () => {
     const [showLinks, setShowLinks] = useState(false)
@@ -17,13 +18,19 @@ const DepartmentCat = () => {
                 </span>
                 <RiArrowDropDownLine size={22} />
             </button>
-            {showLinks &&
-                <div className='absolute z-[1000] bg-white w-[250px] flex flex-col gap-3 pl-6 py-4 border-[1px] transition-all duration-500 ease-in-out'>
-                    {Categories.map((item) => (
-                        <Link key={item} href={`/`}>{item}</Link>
-                    ))}
-                </div>
-            }
+            <AnimatePresence>
+                {showLinks &&
+                    <motion.div
+                        initial={{ opacity: 0, y: 50 }} 
+                        animate={{ opacity: 1, y: '0' }} // Set final position
+                        exit={{ opacity: 0, y: 50 }} // Animate out upward
+                        className='absolute z-[1000] bg-white w-[250px] flex flex-col gap-3 pl-6 py-4 border-[1px] transition-all duration-500 ease-in-out'>
+                        {Categories.map((item) => (
+                            <Link key={item} href={`/`}>{item}</Link>
+                        ))}
+                    </motion.div>
+                }
+            </AnimatePresence>
         </div>
     )
 }
