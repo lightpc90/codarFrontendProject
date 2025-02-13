@@ -1,17 +1,21 @@
-
+import dynamic from "next/dynamic";
 import Blog from "@/components/blog/Blog";
-import Carousel from "@/components/carousel/Carousel";
 import FeauturedProducts from "@/components/featuredProducts/FeauturedProducts";
 import LatestProducts from "@/components/featuredProducts/LatestProducts";
 import ReviewProducts from "@/components/featuredProducts/ReviewProducts";
 import TopRatedProducts from "@/components/featuredProducts/TopRatedProducts";
 
+const HomeCarousel = dynamic(() => import("@/components/carousel/HomeCarousel"), {
+  ssr: false,
+  loading: () => <p className="w-full flex justify-center items-center 2xl:w-[1100px] mx-auto my-[50px] ">Loading Carousel...</p>,
+});// 
+
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen overflow-x-hidden">
-      <main className="w-full">
-
-        <Carousel />
+      <main className=" flex flex-col w-full h-full overflow-hidden">
+        <div className="w-full flex justify-center items-center 2xl:w-[1160px] mx-auto my-[50px] ">
+          <HomeCarousel />
+        </div>
         <FeauturedProducts />
         <div className="flex flex-wrap 2xl:w-[1200px] mx-auto justify-center gap-8 my-[100px]">
           <LatestProducts />
@@ -24,6 +28,5 @@ export default function Home() {
         {/* ----- */}
         <Blog />
       </main>
-    </div>
   );
 }

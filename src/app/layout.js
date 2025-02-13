@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${cairo.className} ${geistSans.variable} ${geistMono.variable} antialiased w-[100vw]`}
+        className={`${cairo.className} ${geistSans.variable} ${geistMono.variable} antialiased min-h-[100vh] w-[100vw] overflow-x-hidden`}
       >
         <Header />
         <Hero />
