@@ -17,7 +17,7 @@ export default function Home() {
           <HomeCarousel />
         </div>
         <FeauturedProducts />
-        <div className="flex flex-wrap 2xl:w-[1200px] mx-auto justify-center gap-8 my-[100px]">
+        <div className="flex flex-wrap max-w-[1200px] overflow-hidden mx-auto justify-center gap-8 my-[100px]">
           <LatestProducts />
           <TopRatedProducts />
           <ReviewProducts />
