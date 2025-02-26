@@ -5,9 +5,12 @@ import React, { useState } from 'react'
 import { FaStar } from "react-icons/fa";
 import { FaRegStarHalfStroke } from "react-icons/fa6";
 import { LuHeart } from "react-icons/lu";
-import { TiSocialFacebook, TiSocialTwitter, TiSocialInstagram, TiSocialPinterest} from "react-icons/ti";
+import { TiSocialFacebook, TiSocialTwitter, TiSocialInstagram, TiSocialPinterest } from "react-icons/ti";
 
 import QuantityButton from './QuantityButton';
+import PreviewCarousel from './PreviewCarousel';
+
+
 
 const Preview = () => {
     const [quantity, setQuantity] = useState(1)
@@ -15,7 +18,9 @@ const Preview = () => {
         <div className='flex gap-4 justify-between w-full'>
             <div className='w-[600px] '>
                 <Image src={`/images/product-details-1.jpg.webp`} alt='product image' width={500} height={500} className='w-full' />
-                <div className='bg-gray-300 w-full h-[150px] mt-6'></div>
+                <div className='w-full h-[150px] mt-6'>
+                    <PreviewCarousel />
+                </div>
             </div>
             {/* right */}
             <div className='flex flex-col gap-5'>
@@ -39,10 +44,10 @@ const Preview = () => {
                 </p>
                 {/* --------- */}
                 <div className='flex items-center gap-2 h-[50px]'>
-                    <QuantityButton quantity={quantity} setQuantity={setQuantity}/>
+                    <QuantityButton quantity={quantity} setQuantity={setQuantity} />
                     <button className='bg-primary px-6 py-2 h-[50px] font-bold text-white'>ADD TO CART</button>
                     <button className='bg-gray-200 text-gray-500 px-6 py-2 h-[50px] font-bold'>
-                        <LuHeart/>
+                        <LuHeart />
                     </button>
                 </div>
                 <div className='border-b-[1px] border-gray-200 w-full my-6'></div>
@@ -61,7 +66,7 @@ const Preview = () => {
                             <TiSocialFacebook />
                             <TiSocialTwitter />
                             <TiSocialInstagram />
-                            <TiSocialPinterest/>
+                            <TiSocialPinterest />
                         </div>
                     </div>
                 </div>

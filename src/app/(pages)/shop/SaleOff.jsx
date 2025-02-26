@@ -61,15 +61,6 @@ const Layout = ({ product }) => {
   )
 }
 
-const SaleOffItems = () => {
-  return (
-    <div className='flex gap-12'>
-      <Layout />
-      <Layout />
-      <Layout />
-    </div>
-  )
-}
 
 const SaleOff = () => {
   return (

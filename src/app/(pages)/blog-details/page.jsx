@@ -50,7 +50,7 @@ const page = () => {
           </p>
           <div className='flex justify-between gap-2 items-center'>
             <div className='flex items-center gap-4 py-6'>
-              <Image src={'/images/blog-1.jpg.webp'} alt='blog' width={100} height={100} className='h-[80px] w-[80px] rounded-full' />
+              <Image src={'/images/avatar.webp'} alt='blog' width={100} height={100} className='h-[80px] w-[80px] rounded-full' />
               <span>
                 <p className='font-bold'>Michael Scofield</p>
                 <p className='text-gray-500'>Admin</p>
