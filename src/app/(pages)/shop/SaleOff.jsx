@@ -48,12 +48,14 @@ const Layout = ({ product }) => {
         <div className={`absolute bottom-[10%] transition-all ${isHover ? 'animate-slideUp' : 'animate-slideDown'}`}>
           <ProductReaction />
         </div>
+        <span className='bg-rose-700 text-white p-1 absolute top-3 left-3
+         h-[40px] w-[40px] text-sm flex items-center justify-center rounded-full'>-20%</span>
       </div>
-      <p className='text-gray-300 text-sm'>Dried Fruit</p>
+      <p className='text-gray-400 text-sm'>Dried Fruit</p>
       <h1 className='mt-2'>{product.name}</h1>
       <div>
-      <span className='font-bold mb-6'>{product.price || "$30.00"}</span>
-        <span className='text-gray-300'>$30.00</span>
+      <span className='font-bold mb-6 mr-2'>{product.price || "$30.00"}</span>
+        <span className='text-gray-400'>$30.00</span>
       </div>
     </motion.div>
   )

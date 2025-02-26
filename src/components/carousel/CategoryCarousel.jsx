@@ -72,7 +72,7 @@ const CategoryCarousel = ({prevRef, nextRef}) => {
             <Swiper
                 modules={[Navigation, Pagination, Autoplay]}
                 slidesPerView={1}
-                speed={800}
+                speed={500}
                 effect="slide"
                 cssMode={true}
                 loop={true}

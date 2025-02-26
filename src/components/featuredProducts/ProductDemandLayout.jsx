@@ -15,7 +15,7 @@ const ProductDemandLayout = ({ title }) => {
         nextRef.current?.click();
     }
     return (
-        <div className="flex-1 w-[370px]">
+        <div className="flex-1 w-[310px]">
             <span className="flex gap-2 items-center justify-between">
                 <h2 className="font-bold text-2xl">{title}</h2>
                 <div className="flex gap-2 items-center">
