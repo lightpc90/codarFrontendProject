@@ -6,6 +6,7 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import 'swiper/css/effect-coverflow';
 import { MdOutlineKeyboardArrowRight, MdOutlineKeyboardArrowLeft } from "react-icons/md";
 import CarouselLayout from "./CarouselLayout";
 
@@ -42,6 +43,9 @@ const HomeCarousel = () => {
                 modules={[Navigation, Pagination, Autoplay]}
                 spaceBetween={10}
                 slidesPerView={4}
+                speed = {800}
+                effect = "slide"
+                cssMode = {true}
                 loop={true}
                 autoplay={{ delay: 3000 }}
                 onSwiper={(swiper) => (swiperRef.current = swiper)} // Attach Swiper instance to ref
