@@ -41,12 +41,17 @@ body {
 
 
 .slick-slider{
-  padding: 20px ! important;
-  margin: 20px ! important;
   position: relative ! important;
   display: flex ! important;
-  align-items: center ! important;
-  justify-content: space-between ! important;
+  padding: 0 ! important;
+  margin: 0 ! important;
+  /* justify-content: space-between ! important; */
+}
+
+.slick-list {
+  padding: 0 !important;
+  margin-right: 0px !important;
+  /* Ensures no internal padding */
 }
 
 .swiper-button-prev,

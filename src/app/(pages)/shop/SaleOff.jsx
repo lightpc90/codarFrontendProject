@@ -27,7 +27,7 @@ const settings = {
   slidesToScroll: 1,
   autoplay: true,
   pagination: true,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 5000,
   arrows: false,
   cssEase: "ease-in-out", // Custom easing
 };

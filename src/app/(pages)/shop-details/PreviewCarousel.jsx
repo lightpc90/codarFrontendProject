@@ -17,14 +17,12 @@ const productImages = [
 
 const settings = {
     dots: false,
-    infinite: true,
     speed: 1000,
     slidesToShow: 4,
     slidesToScroll: 1,
-    
     autoplay: true,
     pagination: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 5000,
     arrows: false,
     cssEase: "ease-in-out", // Custom easing
 };

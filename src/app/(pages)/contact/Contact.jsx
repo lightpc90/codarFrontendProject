@@ -6,9 +6,9 @@ import { TfiEmail } from "react-icons/tfi";
 
 const Contact = () => {
   return (
-      <div className='flex items-center justify-between w-full'>
+      <div className='flex flex-wrap gap-12 items-center justify-between w-full'>
           {/* phone */}
-          <div className='flex flex-col items-center gap-3'>
+          <div className='flex w-full lg:w-[200px] flex-col items-center gap-3'>
               <span className='text-primary'>              
               <FaPhoneAlt size={36} /> 
               </span>
@@ -16,7 +16,7 @@ const Contact = () => {
               <p className='text-gray-500'>+01-3-8888-6868</p>
           </div>
           {/* address */}
-          <div className='flex flex-col items-center gap-3'>
+          <div className='flex flex-col w-full lg:w-[200px] items-center gap-3'>
               <span className='text-primary'>
                   <IoLocationOutline size={36} />
               </span>
@@ -25,7 +25,7 @@ const Contact = () => {
           </div>
          
           {/* open time */}
-          <div className='flex flex-col items-center gap-3'>
+          <div className='flex flex-col w-full lg:w-[200px] items-center gap-3'>
               <span className='text-primary'>
                   <WiTime3 size={36} />
               </span>
@@ -33,7 +33,7 @@ const Contact = () => {
               <p className='text-gray-500'>10:00 am to 23:00 pm</p>
           </div>
           {/* email */}
-          <div className='flex flex-col items-center gap-3'>
+          <div className='flex flex-col w-full lg:w-[200px] items-center gap-3'>
               <span className='text-primary'>
                   <TfiEmail size={36} />
               </span>
