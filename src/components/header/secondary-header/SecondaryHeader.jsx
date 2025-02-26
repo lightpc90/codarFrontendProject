@@ -11,7 +11,7 @@ const SecondaryHeader = () => {
     // secondary header should not render on home page
     if (pathname === '/') return
 
-    let title = pathname.split('/')[1]
+    const title = pathname.split('/')[1]
     const getTitle = () => {
         switch (title) {
             case 'contact':
@@ -43,15 +43,21 @@ const SecondaryHeader = () => {
     }
 
     return (
-        <div className={`relative bg-slate-800 flex flex-col items-center justify-center text-white h-[150px] bg-cover bg-center`}
+        <div className={`relative bg-slate-800 flex flex-col items-center justify-center text-white ${title === 'blog-details' ? "h-[350px]" : 'h-[160px]'} bg-cover bg-center`}
             style={{ backgroundImage: "linear-gradient(rgba(5, 5, 5, 0.9), rgba(50, 50, 0, 0.7)), url('/images/tomatoes.jpg')" }} >
-            <h1 className='text-4xl font-bold '>
+            <h1 className='text-[50px] font-[900] '>
                 {getTitle().title}
             </h1>
-            <span>
+            {title === "blog-details" ? <div className='flex items-center'>
+                <span className='inline-flex mx-6'>{getTitle().blogDetails.author}</span>|
+                <span className='inline-flex mx-6'>{getTitle().blogDetails.date}</span>|
+                <span className='inline-flex mx-6'>{getTitle().blogDetails.comments}</span>
+            </div> : <span>
                 <Link href='/' className='font-bold mr-2'>Home-</Link>
+                {getTitle().category && <Link href='/' className='font-bold mr-2'>Vegetables-</Link>}
                 {getTitle().desc}
-            </span>
+            </span>}
+           
         </div>
     )
 }
