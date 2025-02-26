@@ -37,13 +37,14 @@ const NextArrow = ({ onClick }) => (
 const HomeCarousel = () => {
     const settings = {
         dots: false,
-        infinite: true,
+        infinite: false,
         speed: 800,
         slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 5000,
         cssEase: "ease-in-out",
+        className: "w-full",
         prevArrow: <PrevArrow />,
         nextArrow: <NextArrow />,
         responsive: [
