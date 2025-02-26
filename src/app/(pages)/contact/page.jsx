@@ -9,7 +9,9 @@ const Page = () => {
       <Contact/>
       <Map/>
       {/* form */}
+      <div className='w-full p-4'>
       <LeaveMessage/>
+      </div>
     </div>
   )
 }
