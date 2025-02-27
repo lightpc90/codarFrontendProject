@@ -42,7 +42,7 @@ const FeauturedProducts = () => {
             </AnimatePresence>
             {/* ---- */}
             <div className='flex flex-col 2xl:flex-row items-center 2xl:gap-2 px-2'>
-                <div className='w-[350px] 2xl:w-[600px] p-3 2xl:px-16 flex 2xl:flex-1 items-center justify-between bg-gradient-to-tr from-teal-300 to-teal-500 h-[150px] 2xl:h-[250px]'>
+                <div className='w-[350px] 2xl:w-[550px] p-3 2xl:px-16 flex 2xl:flex-1 items-center justify-between bg-gradient-to-tr from-teal-300 to-teal-500 h-[150px] 2xl:h-[250px]'>
                     <Image src={`/images/fruits.png`} alt='fruit' width={200} height={200} />
                     <div className=''>
                         <h2 className='font-bold text-2xl 2xl:text-3xl'>Summer Fruit</h2>
@@ -50,7 +50,7 @@ const FeauturedProducts = () => {
                         <button className='bg-red-800 py-1 px-3 text-sm rounded-sm text-white font-bold mt-2'>SHOP NOW</button>
                     </div>
                 </div>
-                <div className='w-[350px] 2xl:w-[600px] p-3 2xl:px-16 flex 2xl:flex-1 items-center justify-between bg-gradient-to-tr from-yellow-300 to-yellow-500 h-[150px] 2xl:h-[250px]'>
+                <div className='w-[350px] 2xl:w-[550px] p-3 2xl:px-16 flex 2xl:flex-1 items-center justify-between bg-gradient-to-tr from-yellow-300 to-yellow-500 h-[150px] 2xl:h-[250px]'>
                     <Image src={`/images/juice.png`} alt='fruit' width={200} height={200} />
                     <div className=''>
                         <h2 className='font-bold text-2xl 2xl:text-3xl'>Dried & Drink Fruits</h2>

@@ -9,9 +9,9 @@ import Products from './Products';
 
 const Page = () => {
     return (
-        < div className='flex gap-6 justify-between w-full' >
+        < div className='flex flex-wrap gap-4 justify-between w-full px-4 2xl:p-0' >
             {/* left items */}
-            <div div className='flex flex-col w-[320px] gap-8 ' >
+            <div div className='flex flex-col w-[280px] gap-8' >
                 <Departments />
                 <Price />
                 <Color />
@@ -20,7 +20,7 @@ const Page = () => {
             </div >
             {/* -------------- */}
             {/* right items */}
-            <div className='flex flex-col flex-1'>
+            <div className='flex flex-col w-[880px]'>
                 <SaleOff />
                 {/* horizontal line */}
                 <div className='border-b-[1px] border-gray-300 my-[50px]' ></div>
