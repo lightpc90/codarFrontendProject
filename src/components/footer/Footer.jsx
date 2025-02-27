@@ -13,7 +13,7 @@ const Footer = () => {
                 {/* logo and address */}
                 <div>
                     <Image src="/images/logo.png.webp" alt="logo" width={100} height={100} />
-                    <div>
+                    <div className='flex flex-col gap-2 my-8'>
                         <p>Address: 60-49 Road 11378 New York</p>
                         <p>Phone: +65 11.188.888</p>
                         <p>Email: hello@colorlib.com</p>
@@ -21,11 +21,10 @@ const Footer = () => {
                 </div>
 
                 {/* useful links  */}
-                <div>
-                    <p className='font-bold'>Useful Links</p>
-                    <div className='flex gap-6'>
+                <div className='mb-8'>
+                    <p className='font-bold mb-4'>Useful Links</p>
+                    <div className='flex gap-8'>
                         <div className='flex flex-col gap-3'>
-
                             {FooterLink1.map((link) => (
                                 <Link key={link.name} href={link.link}>{link.name}</Link>
                             ))}
@@ -39,11 +38,11 @@ const Footer = () => {
                     </div>
                 </div>
                 {/* Newsletter */}
-                <div className='flex flex-col gap-2'>
+                <div className='flex flex-col gap-2 '>
                     <p className='font-bold'>Join Our Newsletter Now</p>
                     <p className='text-sm'>Get E-mail updates about our latest shop and special offers.</p>
                     {/* create input element to submit email for newsletter */}
-                    <span className='w-[380px] inline-flex mt-6'>
+                    <span className=' 2xl:w-[380px] inline-flex mt-6'>
                         <input type='email' name='email' placeholder='Enter your mail'
                             className='p-2 h-10 2xl:w-[300px] flex-grow outline-none' />
                         <button className='bg-primary text-white font-bold h-10 px-4 '>SUBSCRIBE</button>
@@ -57,12 +56,12 @@ const Footer = () => {
             {/* horizontal line */}
             <div className='w-full h-[1px] bg-gray-300 mt-6'></div>
             {/* copyright */}
-            <div className='w-full flex flex-wrap justify-between items-center gap-3 mt-6'>
+            <div className='w-full flex flex-wrap justify-center 2xl:justify-between items-center gap-3 mt-6'>
                 <p className='text-sm text-gray-600'>`Copyright <span className='text-lg'>&copy;</span> {date} All rights reserved | Replical of
                     Colorlib template | made with love by <Link href={`/`} className='text-blue-800 font-bold 
                      transition-all duration-500 delay-100 hover:text-blue-600'>Gideon Abbey</Link> `
                 </p>
-                <div>
+                <div className='mt-4'>
                 <Image src={`/images/payment-item.png.webp`} alt='payment cards' height={70} width={250} />
                 </div>
             </div>

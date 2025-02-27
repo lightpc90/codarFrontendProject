@@ -6,7 +6,7 @@ import { FaRegComment } from "react-icons/fa6";
 
 const BlogLayout = ({ blog }) => {
     return (
-        <div className='flex flex-1 flex-col gap-2 p-4'>
+        <div className='flex basis-[300px] flex-1 flex-col gap-2 p-4'>
             {/* image */}
             <Image src={blog.image} alt='blog.title' width={200} height={240} className='w-full' />
             {/* timestamp and comment */}

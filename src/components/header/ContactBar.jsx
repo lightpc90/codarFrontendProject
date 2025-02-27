@@ -9,7 +9,7 @@ import Link from 'next/link';
 const ContactBar = () => {
     return (
 
-        <div className="hidden md:flex bg-secondary text-sm px-4 2xl:px-[380px]  h-[45px] items-center justify-between">
+        <div className="hidden xl:flex bg-secondary text-sm px-4 2xl:px-[380px]  h-[45px] items-center justify-between">
             <div className='flex gap-4'>
                 <p className='flex gap-2 items-center'>
                     <MdEmail />
