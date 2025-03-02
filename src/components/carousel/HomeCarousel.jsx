@@ -37,7 +37,7 @@ const NextArrow = ({ onClick }) => (
 const HomeCarousel = () => {
     const settings = {
         dots: false,
-        infinite: false,
+        infinite: true,
         speed: 800,
         slidesToShow: 4,
         slidesToScroll: 1,
