@@ -8,7 +8,7 @@
 .priceDisplay {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     font-size: 1.1rem;
     color: #c90808;
     font-weight: 800;

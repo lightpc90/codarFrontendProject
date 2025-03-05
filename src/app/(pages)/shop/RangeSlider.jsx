@@ -1,7 +1,7 @@
 // app/components/PriceRange.tsx
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import styles from './PriceRange.module.css';
 
 
@@ -14,7 +14,6 @@ const PriceRange = ({
 }) => {
     const [minPrice, setMinPrice] = useState(defaultMin);
     const [maxPrice, setMaxPrice] = useState(defaultMax);
-
     const handleMinChange = (e) => {
         const value = Math.min(Number(e.target.value), maxPrice);
         setMinPrice(value);
@@ -29,8 +28,6 @@ const PriceRange = ({
 
     return (
         <div className={styles.priceRangeContainer}>
-           
-
             <div className={styles.sliderContainer}>
                 <div className={styles.track} />
                 <div
@@ -40,7 +37,6 @@ const PriceRange = ({
                         right: `${100 - getPercentage(maxPrice)}%`
                     }}
                 />
-
                 <input
                     type="range"
                     min={min}
