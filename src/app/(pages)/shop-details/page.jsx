@@ -5,7 +5,7 @@ import RelatedProduct from './RelatedProduct'
 
 const page = () => {
   return (
-      <div>
+      <div className='w-full flex flex-col items-center px-4'>
           <Preview/>
           <Details/>
           {/* related products */}

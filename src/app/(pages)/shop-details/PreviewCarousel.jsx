@@ -29,7 +29,7 @@ const settings = {
 
 const ImageLayout = ({image}) => {
     return (
-        <div className='h-[120px] w-[120px] bg-gray-300 rounded-md' >
+        <div className='lg:h-[120px] h-[80px] w-[80px] lg:w-[120px] bg-gray-300 rounded-md' >
             <Image src={image} alt='carousel image' height={100} width={100} className='h-full w-full object-fit object-center' />
         </div>
     )

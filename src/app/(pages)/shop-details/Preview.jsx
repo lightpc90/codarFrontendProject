@@ -15,8 +15,8 @@ import PreviewCarousel from './PreviewCarousel';
 const Preview = () => {
     const [quantity, setQuantity] = useState(1)
     return (
-        <div className='flex gap-4 justify-between w-full'>
-            <div className='w-[600px] '>
+        <div className='flex flex-col lg:flex-row gap-4 justify-between w-full'>
+            <div className='w-full lg:w-[600px] '>
                 <Image src={`/images/product-details-1.jpg.webp`} alt='product image' width={500} height={500} className='w-full' />
                 <div className='w-full h-[150px] mt-6'>
                     <PreviewCarousel />
@@ -36,7 +36,7 @@ const Preview = () => {
                     <p className='text-rose-800'>(18 reviews)</p>
                 </div>
                 <p className='text-rose-800 text-2xl font-bold'>$50.00</p>
-                <p className='w-[550px]'>
+                <p className='lg:w-[550px]'>
                     Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
                     Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
                     Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula

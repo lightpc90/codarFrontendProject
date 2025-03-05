@@ -43,9 +43,9 @@ const SecondaryHeader = () => {
     }
 
     return (
-        <div className={`relative bg-slate-800 flex flex-col items-center mt-12 justify-center text-white ${title === 'blog-details' ? "h-[350px]" : 'h-[160px]'} bg-cover bg-center`}
+        <div className={`relative bg-slate-800 flex flex-col items-center mt-12 justify-center text-white ${title === 'blog-details' ? "h-[350px]" : 'h-[230px] lg:h-[160px]'} bg-cover bg-center`}
             style={{ backgroundImage: "linear-gradient(rgba(5, 5, 5, 0.9), rgba(50, 50, 0, 0.7)), url('/images/tomatoes.jpg')" }} >
-            <h1 className='text-[50px] font-[900] '>
+            <h1 className=' text-[50px] text-center  font-[1000] lg:font-[900] '>
                 {getTitle().title}
             </h1>
             {title === "blog-details" ? <div className='flex items-center'>
