@@ -10,7 +10,7 @@ import Pagination from './Pagination';
 const Products = () => {
     return (
         <div className='w-full flex flex-col items-center'>
-            <div className='flex gap-2 items-center justify-between'>
+            <div className='flex flex-col lg:flex-row gap-2 items-center justify-between'>
                 <div className='flex items-center '>
                     <span className='text-gray-400'>
                         Sort By

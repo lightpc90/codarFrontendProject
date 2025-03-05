@@ -16,8 +16,9 @@ const FeaturedProductLayout = ({ item }) => {
           animate={{ opacity: 1, scale: 1 }} // Set final position
           exit={{ opacity: 0, scale: 0.9 }} // Animate out upward
           transition={{ type: "spring", stiffness: "300", damping: "30", duration: 0.5  }}
-          onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)} className='flex flex-col items-center justify-center gap-2'>
-          <div className='w-[270px] h-[300px] flex
+          onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}
+          className='flex flex-col items-center justify-center gap-2' >
+          <div className='w-[340px] lg:w-[270px] h-[300px] flex
                    bg-gray-200 rounded-md items-center justify-center relative'>
               <Image src={item.image} alt={item.name} width={200} height={200} className='' />
               <div className={`absolute bottom-[10%] transition-all ${isHover ? 'animate-slideUp': 'animate-slideDown'}`}>

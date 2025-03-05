@@ -11,7 +11,7 @@ const Page = () => {
     return (
         < div className='flex flex-wrap gap-4 justify-between w-full px-4 2xl:p-0' >
             {/* left items */}
-            <div div className='flex flex-col w-[280px] gap-8' >
+            <div div className='flex flex-col w-full lg:w-[280px] gap-8' >
                 <Departments />
                 <Price />
                 <Color />
