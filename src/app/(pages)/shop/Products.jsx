@@ -35,7 +35,7 @@ const Products = () => {
                     <FeaturedProductLayout key={i} item={product} />
                 ))}
             </div>
-            <div className='bg-gray-800 w-full justify-center'>
+            <div className='w-full'>
                 <Pagination />
             </div>
         </div>
