@@ -9,7 +9,7 @@ import Pagination from './Pagination';
 
 const Products = () => {
     return (
-        <div className=''>
+        <div className='w-full flex flex-col items-center'>
             <div className='flex gap-2 items-center justify-between'>
                 <div className='flex items-center '>
                     <span className='text-gray-400'>
@@ -30,12 +30,14 @@ const Products = () => {
                 </div>
             </div>
             {/* list of products */}
-            <div className='flex flex-wrap gap-4 justify-between my-8'>
+            <div className='flex flex-wrap gap-4 justify-center 2xl:justify-between my-8'>
                 {FeaturedProducts.map((product, i) => (
                     <FeaturedProductLayout key={i} item={product} />
                 ))}
             </div>
-          <Pagination/>
+            <div className='bg-gray-800 w-full justify-center'>
+                <Pagination />
+            </div>
         </div>
     )
 }

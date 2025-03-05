@@ -20,7 +20,7 @@ const Page = () => {
             </div >
             {/* -------------- */}
             {/* right items */}
-            <div className='flex flex-col w-[880px]'>
+            <div className='flex flex-col w-full max-w-[880px]'>
                 <SaleOff />
                 {/* horizontal line */}
                 <div className='border-b-[1px] border-gray-300 my-[50px]' ></div>

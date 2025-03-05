@@ -23,10 +23,12 @@ const DepartmentCat = () => {
             <AnimatePresence>
                 {showLinks &&
                     <motion.div
-                        initial={{ opacity: 0, y: -50 }} 
-                        animate={{ opacity: 1, y: '0' }} // Set final position
-                        exit={{ opacity: 0, y: -50 }} // Animate out upward
-                        className=' bg-white w-full xl:w-[250px] flex flex-col gap-3 pl-6 py-4 border-[1px] transition-all duration-500 ease-in-out '>
+                        initial={{ opacity: 0.5, maxHeight: 0 }}
+                        animate={{ opacity: 1, maxHeight: 500 }} // Set final position
+                        exit={{ opacity: 0.5, maxHeight: 0 }} // Animate out upward
+                        // transition={{ type: "spring", stiffness: 100, damping: 50 }}
+                        transition={{ duration: 0.5, ease: "easeInOut" }}
+                        className=' bg-white w-full xl:w-[250px] overflow-hidden flex flex-col gap-3 pl-6 py-4 border-[1px] '>
                         {Categories.map((item) => (
                             <Link key={item} href={`/`}>{item}</Link>
                         ))}
