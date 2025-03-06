@@ -6,7 +6,7 @@ import { TfiEmail } from "react-icons/tfi";
 
 const Contact = () => {
   return (
-      <div className='flex flex-wrap gap-12 items-center justify-between w-full'>
+      <div className='flex flex-wrap px-4 gap-12 items-center justify-between w-full'>
           {/* phone */}
           <div className='flex w-full lg:w-[200px] flex-col items-center gap-3'>
               <span className='text-primary'>              
