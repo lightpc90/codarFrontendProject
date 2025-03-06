@@ -5,7 +5,7 @@ import LeaveMessage from './LeaveMessage'
 
 const Page = () => {
   return (
-    <div className='w-[100vw] flex flex-col items-center '>
+    <div className='w-full flex flex-col items-center '>
       <Contact/>
       <Map/>
       {/* form */}
