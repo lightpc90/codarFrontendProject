@@ -19,7 +19,7 @@ export const carouselProducts = [
 const PrevArrow = ({ onClick }) => (
     <button
         onClick={onClick}
-        className="absolute left-[-30px] top-1/2 -translate-y-1/2 z-10 border-[1px] border-gray-300 text-gray-800 px-1 py-5 hover:bg-gray-600 transition"
+        className="absolute left-[40%] lg:left-[-30px] top-[110%] lg:top-1/2 lg:-translate-y-1/2 z-10 border-[1px] border-gray-300 text-gray-800 px-1 py-5 hover:bg-gray-600 transition"
     >
         <MdOutlineKeyboardArrowLeft size={20} />
     </button>
@@ -28,7 +28,7 @@ const PrevArrow = ({ onClick }) => (
 const NextArrow = ({ onClick }) => (
     <button
         onClick={onClick}
-        className="absolute right-[-40px] top-1/2 -translate-y-1/2 z-10 border-[1px] border-gray-300 text-gray-800 px-1 py-5 hover:bg-gray-600 transition"
+        className="absolute lg:right-[-40px] right-[40%] top-[110%] lg:top-1/2 lg:-translate-y-1/2 z-10 border-[1px] border-gray-300 text-gray-800 px-1 py-5 hover:bg-gray-600 transition"
     >
         <MdOutlineKeyboardArrowRight size={20} />
     </button>
@@ -55,7 +55,7 @@ const HomeCarousel = () => {
     };
 
     return (
-        <div className="relative w-full">
+        <div className="relative mb-[100px] lg:mb-0 w-full">
             <Slider {...settings}>
                 {carouselProducts.map((product, index) => (
                     <div key={index}>
