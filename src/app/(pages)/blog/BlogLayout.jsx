@@ -7,7 +7,7 @@ import { FaRegComment } from "react-icons/fa6";
 
 const BlogLayout = ({blog}) => {
   return (
-      <div className=' w-[380px] flex flex-col gap-4 mb-[60px]'>
+      <div className='w-full 2xl:w-[350px] flex flex-col gap-4 mb-[60px]'>
           <Image src={blog.image} width={400} height={400} />
           <div className='flex items-center text-gray-500'>
               <MdCalendarToday/> 

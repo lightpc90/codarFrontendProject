@@ -8,8 +8,8 @@ import ListOfBlogs from './ListOfBlogs'
 
 const Page = () => {
   return (
-    <div className='flex gap-4 justify-between'>
-      <div className=''>
+    <div className='flex flex-col px-4 2xl:flex-row gap-4 justify-center 2xl:justify-between'>
+      <div className='w-full'>
         <SearchBar/>
         <BlogCategories/>
         <RecentNews/>

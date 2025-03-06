@@ -16,8 +16,8 @@ import Image from 'next/image'
 
 const page = () => {
   return (
-    <div>
-      <div className='flex gap-4 justify-between'>
+    <div className='w-full px-4'>
+      <div className='flex flex-col-reverse 2xl:flex-row w-full gap-4 justify-between'>
         <div className=''>
           <SearchBar />
           <BlogCategories />
@@ -25,7 +25,7 @@ const page = () => {
           <SearchBy />
         </div>
         {/* right side-- blog details */}
-        <div>
+        <div className='w-full'>
           <Image src={'/images/blog-1.jpg.webp'} alt='blog' width={100} height={100} className=' w-full' />
           <p className='text-gray-500 py-6'>
             Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed
@@ -48,15 +48,15 @@ const page = () => {
             which the whole has a reinforcing effect on the components.
             The use of materials seeks connection to the main house, the adjacent stables
           </p>
-          <div className='flex justify-between gap-2 items-center'>
-            <div className='flex items-center gap-4 py-6'>
+          <div className='flex flex-col 2xl:flex-row w-full justify-between gap-2 2xl:items-center'>
+            <div className='flex items-center gap-4 py-6 w-full'>
               <Image src={'/images/avatar.webp'} alt='blog' width={100} height={100} className='h-[80px] w-[80px] rounded-full' />
               <span>
                 <p className='font-bold'>Michael Scofield</p>
                 <p className='text-gray-500'>Admin</p>
               </span>
             </div>
-            <div className='flex flex-col gap-2'>
+            <div className='flex flex-col gap-2 w-full'>
               <p className='font-bold'>Categories: <span className='text-gray-500 font-light'>Food</span></p>
               <p className='font-bold'>Tags: <span className='text-gray-500 font-light'>All, Trending, Cooking, Healthy Food, Life Style</span></p>
               <div className='flex gap-4 items-center text-gray-500 text-xl'>

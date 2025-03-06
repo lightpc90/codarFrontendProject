@@ -43,7 +43,7 @@ const blogs = [
 
 const ListOfBlogs = () => {
   return (
-    <div className='flex flex-wrap gap-2 justify-between'>
+    <div className='flex flex-wrap w-full gap-3 justify-between'>
       {blogs.map((blog, i) => (
         <BlogLayout key={i} blog={blog} />
       ))}
