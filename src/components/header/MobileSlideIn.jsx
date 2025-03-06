@@ -8,6 +8,7 @@ import { Email, Language, Login, Socials } from './ContactBar'
 import { CgMenu } from "react-icons/cg";
 import Link from 'next/link'
 import { RiArrowDownSFill } from "react-icons/ri";
+import { useMobileMenu } from '../mobileMenuContext/MobileMenuContext'
 
 const menuLinks = [
     { name: "Home", link: "/" },
@@ -25,6 +26,7 @@ const pagesLinks = [
 
 const PagesMenu = () => {
     const [pagesOpen, setPagesOpen] = React.useState(false)
+    const { setOpenSlideIn } = useMobileMenu()
     {
         return (
             <div>
@@ -47,7 +49,7 @@ const PagesMenu = () => {
                             {pagesLinks.map((link, i) => (
                                 (
                                     <li key={i} className='text-sm pl-4'>
-                                        <Link href={link.link}>{link.name}</Link>
+                                        <Link onClick={() => setOpenSlideIn(false)} href={link.link}>{link.name}</Link>
                                     </li>
                                 )
                             ))}
@@ -60,12 +62,12 @@ const PagesMenu = () => {
 }
 
 const MobileSlideIn = () => {
-
+    const { setOpenSlideIn } = useMobileMenu()
     const [isOpen, setIsOpen] = React.useState(false)
 
     return (
         <motion.div
-            onClick={(e)=>e.stopPropagation()}
+            onClick={(e) => e.stopPropagation()}
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -100 }}
@@ -108,7 +110,7 @@ const MobileSlideIn = () => {
                                         </>
                                     ) : (
                                         <li key={i} className='text-sm '>
-                                            <Link href={link.link}>{link.name}</Link>
+                                            <Link onClick={() => setOpenSlideIn(false)} href={link.link}>{link.name}</Link>
                                         </li>
                                     )
                                 ))}
