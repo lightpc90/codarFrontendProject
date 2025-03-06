@@ -45,10 +45,10 @@ const PagesMenu = () => {
                             animate={{ opacity: 1, maxHeight: 400 }}
                             exit={{ opacity: 0.5, maxHeight: 0 }}
                             transition={{ duration: 0.5, ease: "easeInOut" }}
-                            className='flex flex-col gap-4 mt-3 bg-inherit'>
+                            className='flex flex-col gap-4 pl-4 mt-3 bg-inherit'>
                             {pagesLinks.map((link, i) => (
                                 (
-                                    <li key={i} className='text-sm pl-4'>
+                                    <li key={i} className='text-sm ransition-all duration-300  hover:py-1 hover:px-2 hover:bg-gray-200 text-gray-700 hover:rounded-md'>
                                         <Link onClick={() => setOpenSlideIn(false)} href={link.link}>{link.name}</Link>
                                     </li>
                                 )
