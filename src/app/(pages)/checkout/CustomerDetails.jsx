@@ -4,15 +4,15 @@ const CustomerDetails = () => {
     return (
         <div className='flex flex-col gap-4'>
             {/* first name and last name */}
-            <div className='flex items-center gap-6 w-full'>
-                <label className='flex-1 flex-col gap-3 inline-flex'>
+            <div className='flex flex-col 2xl:flex-row items-center gap-6 w-full'>
+                <label className='flex-1 flex-col gap-3 inline-flex w-full'>
                     <div className='flex items-center'>
                         First Name
                         <span className='text-red-500'>*</span>
                     </div>
                     <input type="text" name="first_name" className='w-full outline-none border-[1px] border-gray-200 py-3 px-4 rounded-sm' />
                 </label>
-                <label className='flex-1 flex-col gap-3 inline-flex'>
+                <label className='flex-1 flex-col gap-3 inline-flex w-full'>
                     <div className='flex items-center'>
                         Last Name
                         <span className='text-red-500'>*</span>
