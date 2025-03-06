@@ -1,7 +1,8 @@
 
-import { Cairo} from "next/font/google";
+import { Cairo } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
+import MobileMenuProvider from "@/components/mobileMenuContext/MobileMenuContext";
 
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
@@ -33,13 +34,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${cairo.className} ${geistSans.variable} ${geistMono.variable} antialiased min-h-[100vh] w-[100vw] overflow-x-hidden`}
+        className={`${cairo.className} ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Header />
-        <Hero />
-        <SecondaryHeader/>
-        {children}
-        <Footer/>
+        <MobileMenuProvider>
+          <Header />
+          <Hero />
+          <SecondaryHeader />
+          {children}
+          <Footer />
+        </MobileMenuProvider>
       </body>
     </html>
   );

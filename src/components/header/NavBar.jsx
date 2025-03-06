@@ -11,7 +11,7 @@ import Carts from '../productIcons/Carts'
 import PagesTooltip from './PagesTooltip'
 import { motion, AnimatePresence } from "framer-motion"
 import { CgMenu } from "react-icons/cg";
-import { Email, Language, Login, Socials } from './ContactBar'
+import { useMobileMenu } from '../mobileMenuContext/MobileMenuContext'
 
 import MobileSlideIn from './MobileSlideIn'
 
@@ -29,6 +29,7 @@ export const CartSection = () => {
 }
 
 const Navbar = () => {
+    const {openSlideIn, setOpenSlideIn} = useMobileMenu()
     const pathname = usePathname()
     const [showComponent, setShowComponent] = useState(false);
     const wrapperRef = useRef(null); // Parent wrapper ref
@@ -46,6 +47,11 @@ const Navbar = () => {
         }, 300) // Matched with animation duration
     }
 
+    const handleMobileMenu = (e) => {
+        e.stopPropagation()
+        setOpenSlideIn(!openSlideIn)
+    }
+
     // Cleanup
     useEffect(() => {
         return () => clearTimeout(timeoutRef.current)
@@ -58,13 +64,16 @@ const Navbar = () => {
                 <div className='w-[120px] '>
                     <Image src="/images/logo.png.webp" alt="logo" width={100} height={100} className='w-full' />
                 </div>
-                <div className='xl:hidden border-[1px] border-gray-500 p-1 '>
+
+                {/* ----------- */}
+                <div onClick={(e) => handleMobileMenu(e)} className='xl:hidden border-[1px] border-gray-500 p-1 '>
                     <CgMenu size={25} />
                 </div>
-                {/* mobile slide in menu */}
-                <AnimatePresence>
-                    <MobileSlideIn />
-                </AnimatePresence>
+                {/* ------------ */}
+                {/* mobile slide in menu */}   
+                    <AnimatePresence>
+                        {openSlideIn && <MobileSlideIn />}
+                    </AnimatePresence>
             </section>
             <section className='hidden xl:flex gap-12 font-bold'>
                 {Navlinks.map(({ name, link }, i) => (

@@ -37,6 +37,7 @@ const PagesMenu = () => {
                 <AnimatePresence>
                     {pagesOpen && (
                         <motion.ul
+                            onClick={(e) => e.stopPropagation()}
                             key={'mobile-menu'}
                             initial={{ opacity: 0.5, maxHeight: 0 }}
                             animate={{ opacity: 1, maxHeight: 400 }}
@@ -64,6 +65,7 @@ const MobileSlideIn = () => {
 
     return (
         <motion.div
+            onClick={(e)=>e.stopPropagation()}
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -100 }}
