@@ -8,6 +8,7 @@ import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
 import Hero from "@/components/hero/Hero";
 import SecondaryHeader from "@/components/header/secondary-header/SecondaryHeader";
+import ScrollToTop from "@/components/scroll/ScrollToTop";
 
 const cairo = Cairo({
   subsets: ["latin"],
@@ -41,6 +42,7 @@ export default function RootLayout({ children }) {
           <Hero />
           <SecondaryHeader />
           {children}
+          <ScrollToTop/>
           <Footer />
         </MobileMenuProvider>
       </body>
