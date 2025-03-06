@@ -48,7 +48,7 @@ const PagesMenu = () => {
                             className='flex flex-col gap-4 pl-4 mt-3 bg-inherit'>
                             {pagesLinks.map((link, i) => (
                                 (
-                                    <li key={i} className='text-sm ransition-all duration-300  hover:py-1 hover:px-2 hover:bg-gray-200 text-gray-700 hover:rounded-md'>
+                                    <li key={i} className='text-sm transition-all duration-300  hover:py-1 hover:px-2 hover:bg-gray-200 hover:text-gray-700 hover:rounded-md'>
                                         <Link onClick={() => setOpenSlideIn(false)} href={link.link}>{link.name}</Link>
                                     </li>
                                 )
