@@ -12,7 +12,9 @@ const MobileMenuProvider = ({ children }) => {
             <div onClick={() => setOpenSlideIn(false)} className={`${openSlideIn ?
                 'h-screen overflow-hidden relative' :
                 'min-h-[100vh] w-[100vw] overflow-x-hidden'}`}>
-                <div className={`transform-all duration-500  ${openSlideIn && 'absolute inset-0 h-full w-full bg-black/80 z-50' }`}></div>
+                {/* dark overlay */}
+                <div className={`transform-all duration-500  ${openSlideIn &&
+                    'absolute inset-0 h-full w-full bg-black/80 z-50 backdrop-blur-sm'}`}></div>
                 {children}
             </div>
         </MenuContext.Provider>
