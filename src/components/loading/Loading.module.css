@@ -1,6 +1,6 @@
 .loadingContainer {
     display: flex;
-    position:fixed;
+    position: fixed;
     inset: 0;
     background-color: black;
     justify-content: center;
