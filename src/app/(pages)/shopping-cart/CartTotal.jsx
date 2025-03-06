@@ -2,7 +2,7 @@ import React from 'react'
 
 const CartTotal = () => {
   return (
-      <div className='flex flex-col gap-6 w-[550px] bg-gray-200 p-6 font-bold'>
+      <div className='flex flex-col gap-6 w-full max-w-[550px] bg-gray-200 p-6 font-bold'>
           <span className='text-xl'>Cart Total</span>
           <div className='flex items-center justify-between'>
               <span>Subtotal</span>

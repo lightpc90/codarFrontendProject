@@ -6,7 +6,6 @@ import Socials from '../productIcons/Socials'
 
 const Footer = () => {
     const date = new Date().getFullYear()
-    console.log("date", date)
     return (
         <footer className='w-full flex flex-wrap justify-between bg-tertiary mt-auto p-8 2xl:px-[380px] py-[100px]'>
             <div className='w-full flex flex-wrap justify-between'>
