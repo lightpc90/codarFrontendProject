@@ -23,33 +23,43 @@ const tab1 = () => {
             Sed porttitor lectus nibh.
             Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
         </p>
-</div>}
-const tab2 = () => {
-    return <div className='flex flex-col gap-3'>
         <p>
             Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
             Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
             Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque,
             auctor sit amet aliquam vel, ullamcorper sit amet ligula. Proin eget tortor risus.
+            sit amet dui. Proin eget tortor risus.
         </p>
+</div>}
+const tab2 = () => {
+    return <div className='flex flex-col gap-3'>
         <p>
-            Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit aliquet elit,
             Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
             Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed
             sit amet dui. Proin eget tortor risus.
+            Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit aliquet elit,
+            Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
+            Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed
+           
         </p>
 </div>}
 const tab3 = () => {
     return <div className='flex flex-col gap-3'>
         <p>
-            Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
-            Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Vivamus suscipit tortor eget felis porttitor
-            volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
-            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque,
-            auctor sit amet aliquam vel, ullamcorper sit amet ligula. Proin eget tortor risus.
-            Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem ipsum dolor
-            sit amet, consectetur adipiscing elit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus nibh. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+            (1). Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
+        </p>
+        <p>
+            (2). Pellentesque in ipsum id orci porta dapibus.
+        </p>
+        <p>
+            (3). volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget
+        </p>
+        <p>
+            (4). volutpat. Vestibulum ac diam sit amet quam 
         </p>
     </div>
 }
