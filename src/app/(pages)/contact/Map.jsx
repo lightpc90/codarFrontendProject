@@ -9,7 +9,8 @@ const Map = () => {
         height="100%"
         style={{ border: 0 }}
         allowFullScreen
-        loading="lazy"
+        loading="eager"
+        title='map'
         referrerPolicy="no-referrer-when-downgrade"
       >Map</iframe>
       </div>
