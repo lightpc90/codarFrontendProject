@@ -77,7 +77,7 @@ const MobileSlideIn = () => {
         >
             {/* logo */}
             <div className='w-[120px] '>
-                <Image src="/images/logo.png.webp" alt="logo" width={100} height={100} className='w-full' />
+                <Image src="/images/logo.png.webp" loading='eager' alt="logo" width={100} height={100} className='w-full' />
             </div>
             {/* cart section */}
             <CartSection />
