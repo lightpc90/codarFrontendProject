@@ -76,7 +76,7 @@ const Details = () => {
               <div className='flex items-center gap-6 justify-between flex-1'>
                   <button onClick={() => setTab(1)} className={`font-bold ${tab === 1 ? 'text-black' : 'text-gray-500'}`}>Description</button>
                   <button onClick={() => setTab(2)} className={`font-bold  ${tab === 2 ? 'text-black' : 'text-gray-500'}`}>Information</button>
-                  <button onClick={() => setTab(3)} className={`font-bold ${tab === 3 ? 'text-black' : 'text-gray-500'}`}>Reviews(1)</button>
+                  <button onClick={() => setTab(3)} className={`font-bold ${tab === 3 ? 'text-black' : 'text-gray-500'}`}>Reviews(4)</button>
               </div>
               <div className='border-b-[1px] border-gray-300 flex-1'></div>
               
