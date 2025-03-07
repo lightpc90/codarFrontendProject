@@ -2,7 +2,7 @@ import React from 'react'
 
 const CustomerDetails = () => {
     return (
-        <div className='flex flex-col gap-4'>
+        <div className='flex flex-col w-full gap-4'>
             {/* first name and last name */}
             <div className='flex flex-col 2xl:flex-row items-center gap-6 w-full'>
                 <label className='flex-1 flex-col gap-3 inline-flex w-full'>
@@ -56,14 +56,14 @@ const CustomerDetails = () => {
                 <input type="text" name="postcode" className='w-full outline-none border-[1px] border-gray-200 py-3 px-4 rounded-sm' />
             </label>
             {/* phone and email */}
-            <div className='flex items-center gap-4'>
+            <div className='flex flex-col 2xl:flex-row items-center gap-4 '>
                 {/* phone */}
-                <label className='flex-1 flex flex-col gap-3'>
+                <label className='flex-1 flex flex-col gap-3 w-full'>
                     <div className=''>Phone<span className='text-red-500'>*</span></div>
                     <input type="text" name="phone" className='w-full outline-none border-[1px] border-gray-200 py-3 px-4 rounded-sm' />
                 </label>
                 {/* email */}
-                <label className='flex-1 flex flex-col gap-3'>
+                <label className='flex-1 flex flex-col gap-3 w-full'>
                     <div>Email Address<span className='text-red-500'>*</span></div>
                     <input type="text" name="email" className='w-full outline-none border-[1px] border-gray-200 py-3 px-4 rounded-sm' />
                 </label>

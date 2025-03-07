@@ -2,7 +2,7 @@ import React from 'react'
 
 const OrderDetails = () => {
     return (
-        <div className='px-6 py-12 flex flex-col gap-4 w-[350px] bg-gray-200 h-fit'>
+        <div className='px-6 py-12 flex flex-col w-full gap-4 2xl:w-[350px] bg-gray-200 h-fit'>
             <span className='font-bold text-2xl'>
                 Your Order
             </span>
