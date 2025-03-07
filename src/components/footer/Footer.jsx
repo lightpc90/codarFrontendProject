@@ -57,7 +57,7 @@ const Footer = () => {
             {/* copyright */}
             <div className='w-full flex flex-wrap justify-center 2xl:justify-between items-center gap-3 mt-6'>
                 <p className='text-sm text-gray-600'>`Copyright <span className='text-lg'>&copy;</span> {date} All rights reserved | Replical of
-                    Colorlib template | made with love by <Link href={`/`} className='text-blue-800 font-bold 
+                    Colorlib template | made with love by <Link href={`https://wa.me/2348130853142`} target='_blank' rel='noopener noreferrer' className='text-blue-800 font-bold 
                      transition-all duration-500 delay-100 hover:text-blue-600'>Gideon Abbey</Link> `
                 </p>
                 <div className='mt-4'>
