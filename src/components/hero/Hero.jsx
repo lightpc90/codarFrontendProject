@@ -13,7 +13,7 @@ const Hero = () => {
     <div className='flex flex-wrap w-full px-4 2xl:px-[380px]  xl:justify-between mt-6 '>
       <DepartmentCat />
       {/* Search, Phone and hero card --Right side */}
-      <div className='flex flex-col gap-4 2xl:w-[820px]'>
+      <div className='flex flex-col w-full gap-4 2xl:w-[820px]'>
         {/* right top */}
         <div className='flex flex-wrap justify-between gap-4'>
           {/* search and phone */}

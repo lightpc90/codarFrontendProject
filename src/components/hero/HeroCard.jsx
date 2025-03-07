@@ -3,7 +3,7 @@ import React from 'react'
 
 const HeroCard = () => {
   return (
-      <div className='h-[450px] bg-secondary flex items-center justify-center p-8'>
+      <div className='h-[450px] w-full bg-secondary flex items-center justify-center p-8'>
           <div className='flex flex-1 shrink-0 flex-col gap-4'>       
               <p className='text-primary font-bold font-mono'>FRUIT FRESH</p>
               <p className='font-bold text-3xl 2xl:text-5xl'>Vegetable 100% Organic</p>
